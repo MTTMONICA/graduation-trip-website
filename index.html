@@ -62,6 +62,9 @@ td{background:#fff}
 .check-9{background:#e8eaf6 !important;border-left:4px solid #5c6bc0}
 .check-10{background:#e0f2f1 !important;border-left:4px solid #00897b}
 .check-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ticket-pic{width:100%;max-width:320px;border-radius:8px;margin:10px 0;display:block;box-shadow:0 2px 8px rgba(0,0,0,0.15)}
+.ticket-row{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}
+.ticket-row .t-info-col{flex:1;min-width:280px}
 @media(max-width:768px){
   .check-grid{grid-template-columns:1fr 1fr}
   .spot{flex-direction:column}
@@ -101,15 +104,20 @@ td{background:#fff}
 <div class="row"><div class="time">07:40</div><div class="event">抵达龙岩站，刷身份证进站候车</div></div>
 </div>
 
-<div class="transit">
-<div class="t-icon">🚄</div>
-<div class="t-info"><div class="t-route">龙岩站 → 厦门北站</div><div class="t-detail"><b>D3297 动车 | 已购票</b> | 08:29→09:46（1h17m）</div></div>
-<div class="t-time">08:29出发<br>09:46到达</div>
-</div>
+<div class="ticket-row">
+	<div class="t-info-col">
+	<div class="transit">
+	<div class="t-icon">🚄</div>
+	<div class="t-info"><div class="t-route">龙岩站 → 厦门北站</div><div class="t-detail"><b>D3297 动车 | 已购票</b> | 08:29→09:46（1h17m）| 04车12F号 二等座</div></div>
+	<div class="t-time">08:29出发<br>09:46到达</div>
+	</div>
+	</div>
+	<img class="ticket-pic" src="images/ticket-d3297.jpg" alt="D3297 龙岩→厦门北 车票" onclick="this.style.transform=this.style.transform?'':'scale(1.8)';this.style.cursor='zoom-out'">
+	</div>
 
-<div class="timeline">
-<div class="row"><div class="time">09:46</div><div class="event">抵达厦门北站，快速出站</div></div>
-</div>
+	<div class="timeline">
+	<div class="row"><div class="time">09:46</div><div class="event">抵达厦门北站，快速出站</div></div>
+	</div>
 
 <div class="transit">
 <div class="t-icon">🚕</div>
@@ -122,11 +130,16 @@ td{background:#fff}
 <div class="row"><div class="time">11:10</div><div class="event">过安检。给小孩备零食和水（过安检后买）</div></div>
 </div>
 
-<div class="transit">
-<div class="t-icon">✈️</div>
-<div class="t-info"><div class="t-route">厦门高崎(T4) → 成都双流(T1)</div><div class="t-detail"><b>3U8924 四川航空 | 已购票</b> | 12:10→15:05（2h55m）</div></div>
-<div class="t-time">12:10出发<br>15:05到达</div>
-</div>
+<div class="ticket-row">
+	<div class="t-info-col">
+	<div class="transit">
+	<div class="t-icon">✈️</div>
+	<div class="t-info"><div class="t-route">厦门高崎(T4) → 成都双流(T1)</div><div class="t-detail"><b>3U8924 四川航空 | 已购票</b> | 12:10→15:05（2h55m）| 近30天准点率76%</div></div>
+	<div class="t-time">12:10出发<br>15:05到达</div>
+	</div>
+	</div>
+	<img class="ticket-pic" src="images/flight-3u8924.jpg" alt="3U8924 厦门→成都 机票" onclick="this.style.transform=this.style.transform?'':'scale(1.8)';this.style.cursor='zoom-out'">
+	</div>
 
 <div class="timeline">
 <div class="row"><div class="time">15:05</div><div class="event">🛬 抵达成都双流机场T1！取行李，洗手间</div></div>
@@ -139,12 +152,13 @@ td{background:#fff}
 </div>
 
 <div class="timeline">
-<div class="row"><div class="time">16:10</div><div class="event">🏨 入住：春熙路/太古里附近酒店（约350-500元/间）<b>×2间，连住2晚</b></div></div>
+<div class="row"><div class="time">16:10</div><div class="event">🏨 入住：<b>达 LAB 酒店</b>（成都春熙路步行街店）<br>📍 锦江区春熙路北段26号4楼 · 14:30后入住 <b>×2间，连住2晚</b></div></div>
 <div class="row"><div class="time">17:00</div><div class="event">休整，换衣服</div></div>
 <div class="row"><div class="time">18:00</div><div class="event">🐼 太古里+IFS爬墙熊猫打卡！步行可达</div></div>
 <div class="row"><div class="time">19:00</div><div class="event">🍽️ 晚饭：春熙路龙抄手总店（钟水饺、担担面、赖汤圆，人均50元）</div></div>
 <div class="row"><div class="time">20:30</div><div class="event">🌃 春熙路夜市 + 太古里夜景 + 方所书店</div></div>
 </div>
+<div style="text-align:center"><img class="ticket-pic" src="images/hotel-bookings.png" alt="成都-雅安酒店预订" onclick="this.style.transform=this.style.transform?'':'scale(1.8)';this.style.cursor='zoom-out'" style="max-width:320px"></div>
 <div class="tip">双流机场离市区比天府机场近很多！地铁30-40分钟就到春熙路。9号不用赶雅安，到成都后好好休息。</div>
 </div>
 
@@ -222,7 +236,7 @@ td{background:#fff}
 </div>
 
 <div class="timeline">
-<div class="row"><div class="time">15:50</div><div class="event">🏨 入住：雅安雨都酒店/雅安廊桥酒店（约200元/间）<b>×2间，住1晚</b></div></div>
+<div class="row"><div class="time">15:50</div><div class="event">🏨 入住：<b>来住别院度假酒店</b>（雅安廊桥店）<br>📍 雨城区青衣江路中段66号（近雅州廊桥）· 14:00后入住 <b>×2间，住1晚</b></div></div>
 <div class="row"><div class="time">16:30</div><div class="event">休整</div></div>
 <div class="row"><div class="time">17:30</div><div class="event">🚶 雅安城区漫步：青衣江畔→雅安廊桥（夜景很美！）</div></div>
 <div class="row"><div class="time">18:30</div><div class="event">🍽️ 晚饭：砂锅雅鱼、挞挞面、汉源花椒鸡。<br>推荐雨城区"兰师傅挞挞面"（人均60-80元）</div></div>
